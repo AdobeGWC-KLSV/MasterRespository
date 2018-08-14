@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel = "stylesheet" href = "createAccount.css">
+    <script src = "createAccount.js"></script>
+    <title></title>
+  </head>
+
+  <body>
+    <h1>Create an Account</h1>
+<!--in input, the name= sets the variable name like variable = input() in python-->
+    <p>Username: <input type="text" name=userName></p>
+    <p>Password (please include at least 1 capital letter, 1 number, and 1 symbol): <input type="password" name="Password"></p>
+    <p>Email: <input type="email" name="emailAddress"></p>
+    <p><input type="checkbox" name="consent" value="True">I consent to [our website name] contacting me via the email I provided above.<br></p>
+    <p><input type="submit" value="Create My Account" onclick="createAccount();" /></p>
+  </body>
+</html>
