@@ -1,21 +1,30 @@
-function signInCheck(username_entered, password_entered){
-  //dict["key"] --> key[list] (in list, 0 = pwd and 1 = email)
+var signedIn
+function signInCheck(){
+  signedIn = false;
 
   //sign in test w/ info:
   var usersArr = [];
   var userObj = {};
-  userObj.username = username;
-  userObj.password = pwd;
-  userObj.emailAddress = email;
+  userObj.username = "a";
+  userObj.password = "b";
+  userObj.emailAddress = "c@c.com";
   usersArr.push(userObj);
 
-  //checks if the password and username entered math with a user in the array
-  if (username_entered in usersArr[0]) {
-    if (password_entered in usersArr[0])
-      alert(correct)
-    // need to send user to home screen
+  //set the inputs to variables
+  var username_entered = document.getElementById('usernameSignInBox').value;
+  var password_entered = document.getElementById('passwordSignInBox').value;
+
+  //checks if the password and username entered match with each user in the array
+  for (i in usersArr) {
+    if (username_entered == usersArr[i].username && password_entered == usersArr[i].password) {
+      signedIn = true;
+      alert("correct (Pretend we sent you to the home page)")
+      // need to send user to home screen
+    }
   }
-  // else {
-  //   alert(Your username/password was not correct.);
-  // };
-};
+  //if the username and password don't match in a user object
+  if (signedIn == false) {
+    alert("Your username/password is incorrect.")
+  }
+
+}
