@@ -2,22 +2,37 @@
 .navbar {
     background-color: transparent;
     width: 100%; /* Full width */
+    }
+
+.logo {
+  padding-left:40px;
+  height: 130px;
+  width: 18%;
+  /* float:left; */
+}
+
+.profile {
+  float: right;
+  font-size: 18px;
+  padding-right: 40px;
+  text-decoration: underline;
+
 }
 
 /* Links inside the navbar */
 .navbar a {
     position: relative;
-    float: right;
+    float:right;
     color: black;
-    padding: 20px 60px;
+    padding: 20px 119px;
     text-decoration: None;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     font-family: Helvetica;
 }
 /* Change background on mouse-over */
 .navbar a:hover {
-    background: #ddd;
+    background: 	#F5F5DC;
     color: black;
 }
 
@@ -46,3 +61,34 @@ h2 > a:before {
   transform: scaleX(0);
   transition: .25s linear;
 }
+
+/* nav ul { */
+  /* list-style: none; */
+  /* font-size: 2em; */
+/* }
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  position:relative;
+  text-decoration: none;
+  color: #999999;
+  margin: 20px;
+  padding-top: 10px;
+  padding-right: 10px;
+  border-top: 3px solid firebrick;
+  }
+
+  nav ul li a:after {
+    content:"";
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    background-color: firebrick;
+    width: 0;
+    height: 3px;
+    transition: all 0.4s;
+} */
