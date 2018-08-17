@@ -1,16 +1,13 @@
 /* The navigation bar */
 .navbar {
-  background-color: transparent;
-  width: 100%; /* Full width */
-  display: flex;
-  align-items: flex-end;
-}
+    background-color: transparent;
+    width: 100%; /* Full width */
+    }
 
 .logo {
-  /* padding-left: 30px; */
+  padding-left: 30px;
   height: 130px;
-  /* width: 206px; */
-  /* width: 18%;
+  width: 18%;
   /* float:left; */
 }
 
@@ -19,49 +16,47 @@
   font-size: 18px;
   padding-right: 40px;
   text-decoration: underline;
-}
 
-.header {
-  display: flex;
 }
 
 /* Link boxes inside the navbar */
 .navbar a {
-    /* position: relative;
-    float:right; */
+    position: relative;
+    float:right;
     color: black;
-    /* padding: 20px 70px; */
+    padding: 20px 70px;
     text-decoration: None;
     font-weight: bold;
     font-size: 18px;
     font-family: Helvetica;
-    /* margin-bottom: 17px; */
-    width: 100%;
-    text-align: center;
-    padding-bottom: 10px;
-    padding-top: 16px;
-    margin-bottom: 17px;
 }
 /* Change background on mouse-over */
 .navbar a:hover {
     background: 	#F5F5DC;
+    color: black;
 }
 
 
-.navbar a:hover:after,
-.navbar a:focus:after {
+h2 > a:hover:before,
+h2 > a:focus:before {
+  visibility: visible;
   transform: scaleX(1);
 }
 
-.navbar a:after {
+.uno a:before {
+  background: rgba(0,0,0,0);
+  box-shadow: 0 0 10px 2px #ffdb00;
+}
+
+h2 > a:before {
   content: "";
-  display: block;
-  position: relative;
-  top: 10px;
+  position: absolute;
   width: 100%;
   height: 3px;
-  /* background: rgba(0,0,0,0); */
-  box-shadow: 0 0 10px 2px #ffdb00;
+  bottom: 0;
+  left: 0;
+  background: #9CF5A6;
+  visibility: hidden;
   border-radius: 5px;
   transform: scaleX(0);
   transition: .25s linear;
