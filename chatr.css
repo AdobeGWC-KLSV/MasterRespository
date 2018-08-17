@@ -42,6 +42,18 @@ body{
   border-radius: 25px;
 }
 
+.chatMessage {
+  border-style: solid;
+  padding:20px;
+  border-radius: 25px;
+}
+
+#second {
+  border-style: solid;
+  padding:20px;
+  border-radius: 25px;
+}
+
 .second {
   border-style: solid;
   padding:20px;
@@ -100,7 +112,7 @@ body {
   width: 190px;
   position: fixed;
   z-index: 1;
-  top: 280px;
+  top: 350px;
   left: 990px;
   background: #DB7093;
   overflow-x: hidden;
