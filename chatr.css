@@ -1,0 +1,182 @@
+div {
+  background-color: none;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: 	#FFE4B5;
+  color: white;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+body{
+  background-image: url(water2.jpg);
+}
+
+#first {
+  border-style: solid;
+  padding:20px;
+  border-radius: 25px;
+}
+
+#demo {
+  border-style: solid;
+  padding:20px;
+  border-radius: 25px;
+}
+
+#demo2 {
+  border-style: solid;
+  padding:20px;
+  border-radius: 25px;
+}
+
+.second {
+  border-style: solid;
+  padding:20px;
+  border-radius: 25px;
+}
+
+#column1 {
+  float: left;
+  width: 65%;
+  padding:40px;
+  padding-left: 10px;
+  border-radius: 25px;
+}
+
+#column2{
+  float:right;
+  width:20%;
+  padding:30px;
+  padding-right: 20px;
+  background-color:#A85353;
+}
+
+#user{
+  float: left;
+}
+
+.userimage {
+  width: 180px;
+  height: 150px;
+  min-height: 0px;
+  min-width: 0px;
+}
+
+#textcolumn {
+  float: right;
+  width: 90%;
+  border-radius: 25px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.survey {
+  padding-left:35px;
+  color:white;
+}
+
+.sidenav {
+  width: 190px;
+  position: fixed;
+  z-index: 1;
+  top: 280px;
+  left: 990px;
+  background: #DB7093;
+  overflow-x: hidden;
+  padding: 12px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 8px 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  font-weight: bold;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+button {
+  background:none;
+}
+
+.usernames {
+  padding-top: 100px;
+  font-size: 30px;
+  float: left;
+  padding-left: 0;
+  margin-left: -40px;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 200px;
+  padding: 60px 0 0;
+  border: none;
+  font: normal 40px/0.65 "Squada One", Helvetica, sans-serif;
+  color: black;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 8px 5px 0 rgba(188,188,188,1) ;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.topnav .search-container button {
+  padding: 30px 30px;
+  margin-top: 100px;
+  margin-right: 10px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    padding-bottom: 30px;
+  }
+  @import url('//fonts.googleapis.com/css?family=Pacifico&text=Pure');
+@import url('//fonts.googleapis.com/css?family=Roboto:700&text=css');
+@import url('//fonts.googleapis.com/css?family=Kaushan+Script&text=!');
+
+body {
+ min-height: 450px;
+ height: 100vh;
+ margin: 0;
+ background: radial-gradient(circle, darken(dodgerblue, 10%), #1f4f96, #1b2949, #000);
+}
