@@ -5,21 +5,14 @@ function myFunction() {
     document.getElementById("demo").innerHTML = chat;
 }
 
+// var chat2 = [];
+var count = 1;
 function myFunction2() {
     var x = document.getElementById("myText").value;
-    document.getElementById("demo2").innerHTML = x;
+    // chat2.push(x);
+    var p = document.createElement("p");
+    p.className = 'chatMessage';
+    p.innerHTML = count + ". " + x;
+    document.getElementById("second").appendChild(p);
+    count = count + 1; // count++; or ++count; or count += 1;
 }
-
-
-
-$.fn.usernames = function() {
-  $(this).each(function() {
-    $(this).html($(this).text().split("").map(function(v, i) {
-      return '<span class="usernames-' + (i % 2 == 0 ? 'gold' : 'blue') + '">' + v + '</span>';
-    }).join(""));
-  });
-};
-
-$(function() { // don't forget $(document).ready!
-  $('h1.usernames').usernames();
-});
