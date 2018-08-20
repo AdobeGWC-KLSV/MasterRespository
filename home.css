@@ -122,8 +122,7 @@ body {
 #life{
   color:#CD5C5C;
   font-size: 60px;
-  /* padding-left:350px;
-  padding-top:50px; */
+  font-family: "Kalam";
   font-weight:bold;
   animation:blinkingText 3s infinite;
   padding: 8px 12px;

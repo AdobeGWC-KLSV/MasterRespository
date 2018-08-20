@@ -1,5 +1,6 @@
 var signedIn
 function signInCheck() {
+  event.preventDefault() //prevents the default behavior that tries to submit the inputs to the page prevents redirection to homepage
   signedIn = false;
 
   //sign in test w/ info:
@@ -18,7 +19,7 @@ function signInCheck() {
   for (i in usersArr) {
     if (username_entered == usersArr[i].username && password_entered == usersArr[i].password) {
       signedIn = true;
-      alert("correct");
+      alert("You are 'logged in' on this prototype; however, there is currently not a database of saved users.");
       window.location.assign("index.html");
       break
     }
@@ -27,7 +28,6 @@ function signInCheck() {
   if (signedIn == false) {
     alert("Your username/password is incorrect.");
   }
-  return false; //prevents the default behavior that prevents redirection to homepage
 }
 
 //failed taffy database
