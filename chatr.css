@@ -33,12 +33,16 @@ body{
   border-radius: 25px;
 }
 
-#demo {
+#textbox {
   border-style: solid;
   padding:20px;
   border-radius: 25px;
 }
 
+#textbox .dropdown {
+  float: right;
+  display: none;
+}
 #demo2 {
   border-style: solid;
   padding:20px;
@@ -90,7 +94,9 @@ body{
   min-height: 0px;
   min-width: 0px;
 }
-
+.three{
+  padding-left:40px;
+}
 #textcolumn {
   float: right;
   width: 90%;
@@ -224,13 +230,6 @@ body {
     display: block;
 }
 
-#dropdown:hover .dropdown-content {
-    display: block;
-}
-
-#dropdown:hover .dropdown-content2 {
-    display: block;
-}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
