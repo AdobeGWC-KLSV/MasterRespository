@@ -2,6 +2,7 @@
 <html>
 <head>
   <link rel = "stylesheet" type = "text/css" href = "header.css"/>
+  <link rel = "stylesheet" type = "text/css" href = "Inspirationboard.css"/>
   <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Butterfly Kids' rel='stylesheet'>
@@ -12,6 +13,7 @@
     <a>or</a>
     <a href="signIn.html">Sign In</a><br>
   </div>
+
   <div class = "header">
     <img class = "logo" src="Chater5Cropped.png" alt="Chatter logo" >
     <div class="navbar">
@@ -22,45 +24,78 @@
     </div>
   </div>
 
-<div class ="sizes">
-  <img src="images/aboveall.jpg" alt="above all" >
-  <img src="images/wat.jpg" alt="wat" >
-  <img src="images/relax.jpg" alt="relax" >
-  <img src="images/banana.jpg" alt="banana" >
-  <img src="images/church.jpg" alt="church" >
-  <img src="images/water.jpg" alt="water" >
-  <img src="images/goat.jpg" alt="goat" >
-  <img src="images/coconut.jpg" alt="coconut" >
-  <img src="images/cotton.jpg" alt="cotton" >
-  <img src="images/pizza.jpg" alt="pizza" >
-  <img src="images/coconut2.jpg" alt="coconut2" >
-  <img src="images/tea.jpg" alt="tea" >
-  <img src="images/doggo.jpg" alt="doggo" >
-  <img src="images/waterr.jpg" alt="waterr" >
-  <img src="images/verse.jpg" alt="verse" >
-  <img src="images/sushi.jpg" alt="sushi" >
-  <img src="images/eng.jpg" alt="eng" >
-  <img src="images/phone.jpg" alt="phone" >
-  <img src="images/jump.jpg" alt="jump" >
-  <img src="images/makeup1.jpg" alt="makeup1" >
-  <img src="images/happy.jpg" alt="happy" >
-  <img src="images/godess.jpg" alt="godess" >
-  <img src="images/moon.jpg" alt="moon" >
-  <img src="images/rose.jpg" alt="rose" >
-  <img src="images/puppies.jpg" alt="godess" >
-  <img src="images/paint.jpg" alt="paint" >
-  <img src="images/girl.jpg" alt="girl" >
-  <img src="images/smile.jpg" alt="smile" >
-  <img src="images/colorfulsky.jpg" alt="colorfulsky" >
-  <img src="images/honey.jpg" alt="honey" >
-  <img src="images/moon2.jpg" alt="moon2" >
-  <img src="images/oceanface.jpg" alt="oceanface" >
-  <img src="images/cute.jpg" alt="cute" >
-  <img src="images/animals.jpg" alt="animals" >
-</div>
+<div class="row">
+   <div class="column">
+      <img id="img" src="images/aboveall.jpg">
+      <img src="images/wat.jpg" alt="wat" >
+      <img src="images/relax.jpg" alt="relax" >
+      <img src="images/banana.jpg" alt="banana" >
+      <img src="images/church.jpg" alt="church" >
+      <img src="images/water.jpg" alt="water" >
+      <img src="images/coconut.jpg" alt="coconut" >
+      <img src="images/cotton.jpg" alt="cotton" >
 
-  <a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://www.pinterest.com/Queenviktoriya/colour/"></a>
-  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+      <img src="images/godess.jpg" alt="godess" >
+      <img src="images/pizza.jpg" alt="pizza" >
+      <img src="images/coconut2.jpg" alt="coconut2" >
+      <img src="images/tea.jpg" alt="tea" >
+      <img src="images/doggo.jpg" alt="doggo" >
+      <img src="images/waterr.jpg" alt="waterr" >
+      <img src="images/verse.jpg" alt="verse" >
+
+      <img src="images/sushi.jpg" alt="sushi" >
+      <img src="images/happy.jpg" alt="happy" >
+      <img src="images/eng.jpg" alt="eng" >
+      <img src="images/phone.jpg" alt="phone" >
+      <img src="images/jump.jpg" alt="jump" >
+      <img src="images/makeup1.jpg" alt="makeup1" >
+      <img src="images/healthy.jpg" alt="healthy" >
+
+
+
+      <img src="images/rose.jpg" alt="rose" >
+      <img src="images/puppies.jpg" alt="godess" >
+      <img src="images/paint.jpg" alt="paint" >
+      <img src="images/girl.jpg" alt="girl" >
+      <img src="images/smile.jpg" alt="smile" >
+      <img src="images/colorfulsky.jpg" alt="colorfulsky" >
+      <img src="images/honey.jpg" alt="honey" >
+    </div>
+    <div class="column">
+      <img src="images/moon2.jpg" alt="moon2" >
+      <img src="images/oceanface.jpg" alt="oceanface" >
+      <img src="images/cute.jpg" alt="cute" >
+      <img src="images/palmtree.jpg" alt="palmtree" >
+      <img src="images/palm.jpg" alt="palm" >
+      <img src="images/palmm.jpg" alt="palmm" >
+      <img src="images/la.jpg" alt="la" >
+
+
+
+      <img src="images/makeup3.jpg" alt="makeup3" >
+      <img src="images/sunset.jpg" alt="sunset" >
+      <img src="images/makeup2.jpg" alt="makeup2" >
+      <img src="images/yellow.jpg" alt="yellow" >
+      <img src="images/makeup1.jpg" alt="makeup1" >
+      <img src="images/saltwater.jpg" alt="saltwater" >
+      <img src="images/sunset2.jpg" alt="sunset2" >
+      <img src="images/nyc.jpg" alt="nyc" >
+      <img src="images/reading.jpg" alt="reading" >
+      <img src="images/healthy2.jpg" alt="healthy2" >
+    </div>
+  </div>
+</div>
 </body>
+
+<footer>
+    <p>
+      <input type="text" id="myText2" name="text" placeholder="Type something in...">
+      <button onclick="myFunction()" style="font-weight:bold;">Send</button>
+      <button onclick="record()" style="font-weight:bold;">Record</button>
+      <button onclick="image()" style="font-weight:bold;">Image</button>
+      <button onclick="link()"style="font-weight:bold;">Link</button>
+    </p>
+</footer>
 
 </html>
