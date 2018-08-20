@@ -19,8 +19,8 @@ function signInCheck() {
     if (username_entered == usersArr[i].username && password_entered == usersArr[i].password) {
       signedIn = true;
       alert("correct");
+      location.assign("https://gwc-chatr.github.io./index.html");
       //not sending user home for some reason, it works when placed outside of this function
-      window.location.replace("file:///C:/Users/Girls%20Who%20Code/Desktop/GWC-Chatr.github.io/home.html");
       break
     }
   }
@@ -28,6 +28,7 @@ function signInCheck() {
   if (signedIn == false) {
     alert("Your username/password is incorrect.");
   }
+
 
 }
 
