@@ -10,16 +10,16 @@
 
 //defines a new user object and adds info to user array; users numbered by their index in the list based on when they were added
 var usersArr = []; //empty array for initial test before trying to read the JSON file
-function createAccount() {
+function createAccount(event) {
+  event.preventDefault() //prevents the default behavior that tries to submit the inputs to the page prevents redirection to homepage
   var userObj = {};
   userObj.username = document.getElementById('newUsernameBox').value; //adding the inputted value based on the element ID
   userObj.password = document.getElementById('newPwdBox').value;
   userObj.emailAddress = document.getElementById('newEmailBox').value;
   usersArr.push(userObj);
-
-  alert("We are still working on attaching a json file to the user database. Here is your info: username: " userObj.username + ", password: " + userObj.password + " & email: " + userObj.emailAddress);
-  window.location.assign("index.html")
-  return false; //prevents the default behavior that prevents redirection to homepage
+  var message = "We are still working setting up the user database and are currently unable to create your profile. Here is your info: username: " + userObj.username + ", password: " + userObj.password + " & email: " + userObj.emailAddress;
+  alert(message);
+  window.location.assign("index.html");
 }
   // //convert usersArr to newUsersArrObj
   // var newUsersArrObj = {};

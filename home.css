@@ -7,8 +7,10 @@
   margin: auto;
 }
 
+
 .mySlides > img {
   max-height: 250px;
+  object-fit: cover;
 }
 
 /* Hide the images by default */
@@ -122,8 +124,7 @@ body {
 #life{
   color:#CD5C5C;
   font-size: 60px;
-  /* padding-left:350px;
-  padding-top:50px; */
+  font-family: "Kalam";
   font-weight:bold;
   animation:blinkingText 3s infinite;
   padding: 8px 12px;

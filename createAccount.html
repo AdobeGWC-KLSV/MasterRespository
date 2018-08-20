@@ -21,15 +21,17 @@
         <a href="aboutus.html">About Us</a>
       </div>
     </div>
+    <div class="ha">
     <h1>Create an Account</h1>
     <form>
       <p>Username: <input type="text" id="newUsernameBox"></p>
       <p>Password (please include at least 8 characters, including 1 capital letter, 1 number, and 1 symbol): <input type="password" id = "newPwdBox"></p>
       <p>Email: <input type="email" id="newEmailBox"></p>
       <p><input type="checkbox" id="consent" value="True">I consent to Chatr contacting me via the email I provided above.<br></p>
-      <p><input type="submit" value="Create My Account" onclick="createAccount()" ></p>
+      <p><input type="submit" value="Create My Account" onClick="createAccount(event)" ></p>
     </form>
     <p>Or sign into an existing account <a href = "signIn.html">here</a></p>
+  </div>
   </body>
 
 </html>
