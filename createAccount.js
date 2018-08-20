@@ -1,7 +1,7 @@
 //IN ORDER FOR NODE COMMANDS LIKE REQUIRE() TO WORKS, I NEED TO DOWNLOAD NODE AND BROWSERIFY/WEBPACK
 
 //load fs module to use Node.js for reading/writing to json files
-const fs = require('fs');
+///////////////////////////////////Add back in//const fs = require('fs');
 // //read json file strings into a single object
 // var usersText = fs.readFile("users.json");
 // var oldUsersArrObj = JSON.parse(usersText);
@@ -17,22 +17,25 @@ function createAccount() {
   userObj.emailAddress = document.getElementById('newEmailBox').value;
   usersArr.push(userObj);
 
-  //convert usersArr to newUsersArrObj
-  var newUsersArrObj = {};
-  for (var i=0; i<usersArr.length; i++) {
-    newUsersArrObj[usersArr[i].key] = usersArr[i].value;
-  }
-  //write newUsersArrObj to json file as strings
-  //var jsonUserDatabase = JSON.stringify(newUsersArrObj);
-  fs.writeFile("users.json", JSON.stringify(newUsersArrObj), (err) => {
-    if (err) {
-        console.error(err);
-        return;
-    };
-    console.log("JSON file has been created");
-  });
-  //alert("We are still working on attaching a json file to the user database. Here is your info: username: " usersDatabase() + ", password: " +  + " & email: " + );
-};
+  alert("We are still working on attaching a json file to the user database. Here is your info: username: " userObj.username + ", password: " + userObj.password + " & email: " + userObj.emailAddress);
+  window.location.assign("index.html")
+  return false; //prevents the default behavior that prevents redirection to homepage
+}
+  // //convert usersArr to newUsersArrObj
+  // var newUsersArrObj = {};
+  // for (var i=0; i<usersArr.length; i++) {
+  //   newUsersArrObj[usersArr[i].key] = usersArr[i].value;
+  // }
+  // //write newUsersArrObj to json file as strings
+  // fs.writeFile("users.json", JSON.stringify(newUsersArrObj), (err) => {
+  //   if (err) {
+  //       console.error(err);
+  //       return;
+  //   };
+  //   console.log("JSON file has been created");
+  // });
+
+
 
 //failed taffy database
 // var usersDatabase = TAFFY();
