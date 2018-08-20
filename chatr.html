@@ -13,7 +13,7 @@
   <link href='https://fonts.googleapis.com/css?family=Butterfly Kids' rel='stylesheet'>
   <!-- <link href="https://fonts.googleapis.com/css?family=Atomic%20Age" rel="stylesheet" type="text/css"/> -->
   <link async href="https://fonts.googleapis.com/css?family=Squada%20One" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
-  <link rel="shortcut icon" type="image/png" href="Chater5Cropped.png"/>
+  <link rel="shortcut icon" type="image/png" href="finallips.png"/>
   <title>Chatr</title>
 </head>
 <body>
@@ -38,16 +38,19 @@
       </div>
       <div  class="usernames"style="font-weight:bold;"> queen.py</div>
       <div id="textcolumn">
-        <p id="demo"style="font-weight:bold;">Some text...</p>
+        <p id="demo" style="font-weight:bold;">Some text...</p>
+        <p id="icon"></p>
         <div id="second">
           <div class="comments"style="font-weight:bold;">Comments...</div>
           <input class="button1" type="text" id="myText" name="text" placeholder="Type something in...">
           <button style="font-weight:bold;" class="button1" onclick="myFunction2()">Send</button>
-          <span id="dropdown">
-            <button class="circle1" style="font-size:25px;color:green;"><i class="fa fa-thumbs-up"></i></button>
+          <span class="dropdown">
+            <button onclick="moveIcon()" id="thumbsup" class="circle1"style="font-size:25px;color:green;"><i class="fa fa-thumbs-up"></i></button>
             <img class="dropdown-content" src="thumbup.gif">
+          </span>
+          <span class="dropdown">
             <button class="circle1" style="font-size:25px;color:red;"><i class="fa fa-thumbs-down"></i></button>
-            <img class="dropdown-content2" src="boo.gif">
+            <img class="dropdown-content" id="boogif" src="boo.gif">
           </span>
           <p></p>
           <div class="dropdown">

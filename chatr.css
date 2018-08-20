@@ -204,6 +204,9 @@ body {
     z-index: 1;
 }
 
+#boogif {
+  padding-right: 30px;
+}
 .dropdown-content2 {
     display: none;
     position: absolute;
