@@ -12,7 +12,7 @@
   <link async href="https://fonts.googleapis.com/css?family=Squada%20One" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-  <a class = "profile">My Profile</a>
+  <a class = "profile" style="font-weight:bold;">My Profile</a>
   <div class = "header">
     <img class = "logo" src="Chater5Cropped.png" alt="Chatter logo" >
     <div class="navbar">
@@ -27,11 +27,13 @@
       <div id="user">
         <img class = "userimage" src="minion2.jpg">
       </div>
-      <div class="usernames"> queen.py</div>
+      <div  class="usernames"style="font-weight:bold;"> queen.py</div>
       <div id="textcolumn">
-        <p id="demo">Some text...</p>
+        <p id="demo"style="font-weight:bold;">Some text...</p>
         <div id="second">
+          <div class="comments"style="font-weight:bold;">Comments...</div>
           <input class="button1" type="text" id="myText" name="text" placeholder="Type something in...">
+
           <button style="font-weight:bold;" class="button1" onclick="myFunction2()">Send</button>
           <p></p>
           <button style="font-size:30px;color:red;"><i class="fa fa-microphone"></i></button>
@@ -51,27 +53,36 @@
       <div id="user">
         <img class = "userimage" src="minionn.png">
       </div>
+      <p></p>
+
       <div class="usernames">IcancallmyselfwhateverIwant.py</div>
       <div id="textcolumn">
-        <p id="demo">Some text..</p>
-        <p class="second">
+        <p id="demo" style="font-weight:bold">Some text.. </p>
+
+        <div class="second">
+          <div class="comments" style="font-weight:bold;">Comments...</div>
           <input class="button1" type="text" id="myText" name="text" placeholder="Type something in...">
-          <button class="button1" onclick="myFunction()">Send</button>
-          <button class="button1" onclick="image()">Image</button>
-          <button class="button1" onclick="recording()">Record</button>
-        </p>
+
+          <button style="font-weight:bold;" class="button1" onclick="myFunction2()">Send</button>
+          <p></p>
+          <button style="font-size:30px;color:red;"><i class="fa fa-microphone"></i></button>
+          <button style="font-size:30px;color:blue;"> <i class="fa fa-camera"></i></button>
+          <button style="font-size:30px;color:green;"><i class="material-icons">attachment</i></button>
+        </div>
       </div>
+
+
     </div>
-    <p></p>
-  </div>
+
+
 
   <footer>
     <p>
       <input type="text" id="myText2" name="text" placeholder="Type something in...">
-      <button onclick="myFunction()">Send</button>
-      <button onclick="record()">Record</button>
-      <button onclick="image()">Image</button>
-      <button onclick="link()">Link</button>
+      <button onclick="myFunction()" style="font-weight:bold;">Send</button>
+      <button onclick="record()" style="font-weight:bold;">Record</button>
+      <button onclick="image()" style="font-weight:bold;">Image</button>
+      <button onclick="link()"style="font-weight:bold;">Link</button>
     </p>
     <div class="search-container" align = "right">
       <form action="/action_page.php">

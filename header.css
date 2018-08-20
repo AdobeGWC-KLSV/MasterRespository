@@ -16,7 +16,7 @@
 
 .profile {
   float: right;
-  font-size: 18px;
+  font-size: 25px;
   padding-right: 40px;
   text-decoration: underline;
 }
@@ -33,7 +33,7 @@
     /* padding: 20px 70px; */
     text-decoration: None;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     font-family: Helvetica;
     /* margin-bottom: 17px; */
     width: 100%;
