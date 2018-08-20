@@ -18,7 +18,9 @@ function createAccount() {
   usersArr.push(userObj);
 
   alert("We are still working on attaching a json file to the user database. Here is your info: username: " userObj.username + ", password: " + userObj.password + " & email: " + userObj.emailAddress);
-
+  window.location.assign("index.html")
+  return false; //prevents the default behavior that prevents redirection to homepage
+}
   // //convert usersArr to newUsersArrObj
   // var newUsersArrObj = {};
   // for (var i=0; i<usersArr.length; i++) {
@@ -32,7 +34,8 @@ function createAccount() {
   //   };
   //   console.log("JSON file has been created");
   // });
-};
+
+
 
 //failed taffy database
 // var usersDatabase = TAFFY();

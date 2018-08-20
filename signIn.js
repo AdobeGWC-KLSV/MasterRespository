@@ -19,8 +19,7 @@ function signInCheck() {
     if (username_entered == usersArr[i].username && password_entered == usersArr[i].password) {
       signedIn = true;
       alert("correct");
-      window.location.assign("https://gwc-chatr.github.io./index.html");
-      //not sending user home for some reason, it works when placed outside of this function
+      window.location.assign("index.html");
       break
     }
   }
@@ -28,8 +27,7 @@ function signInCheck() {
   if (signedIn == false) {
     alert("Your username/password is incorrect.");
   }
-
-
+  return false; //prevents the default behavior that prevents redirection to homepage
 }
 
 //failed taffy database
