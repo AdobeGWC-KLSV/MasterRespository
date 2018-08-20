@@ -11,11 +11,12 @@
   height: 130px;
 }
 
-.profile {
+.profileManagement {
+  font-size: 24px;
   float: right;
-  font-size: 25px;
-  padding-right: 40px;
-  text-decoration: underline;
+  text-align: center;
+  padding-right: 7px;
+  font-family: "Butterfly Kids";
 }
 
 .header {
