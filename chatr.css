@@ -10,6 +10,7 @@ footer {
   background-color: 	#FFE4B5;
   color: white;
   text-align: center;
+  padding-top: 10px;
 }
 
 * {
@@ -174,10 +175,6 @@ button {
   font-size: 17px;
   border: none;
   cursor: pointer;
-}
-
-footer {
-  padding-top: 10px;
 }
 
 body {
