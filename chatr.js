@@ -16,3 +16,9 @@ function myFunction2() {
     document.getElementById("second").appendChild(p);
     count = count + 1; // count++; or ++count; or count += 1;
 }
+
+function moveIcon() {
+  var icon1 = document.getElementById("thumbsup");
+  document.getElementById("icon").innerHTML = icon1;
+
+}
