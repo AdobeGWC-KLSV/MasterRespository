@@ -7,11 +7,8 @@
 }
 
 .logo {
-  /* padding-left: 30px; */
+  padding-left: 30px;
   height: 130px;
-  /* width: 206px; */
-  /* width: 18%;
-  /* float:left; */
 }
 
 .profile {
@@ -27,20 +24,16 @@
 
 /* Link boxes inside the navbar */
 .navbar a {
-    /* position: relative;
-    float:right; */
     color: black;
-    /* padding: 20px 70px; */
     text-decoration: None;
     font-weight: bold;
-    font-size: 18px;
-    font-family: Helvetica;
-    /* margin-bottom: 17px; */
+    font-size: 28px;
+    font-family: "Abril Fatface";
+    margin-bottom: 20px;
     width: 100%;
     text-align: center;
     padding-bottom: 10px;
     padding-top: 16px;
-    margin-bottom: 17px;
 }
 /* Change background on mouse-over */
 /* .navbar a:hover {
