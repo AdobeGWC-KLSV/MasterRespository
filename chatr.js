@@ -22,3 +22,13 @@ function moveIcon() {
   document.getElementById("icon").innerHTML = icon1;
 
 }
+
+function thumbsup() {
+  document.getElementById("downicon").style.display = "none";
+  document.getElementById("thumbicon").style.display = "block";
+}
+
+function thumbsdown() {
+  document.getElementById("thumbicon").style.display ="none";
+  document.getElementById("downicon").style.display = "block";
+}

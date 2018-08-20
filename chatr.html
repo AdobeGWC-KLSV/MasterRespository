@@ -41,34 +41,45 @@
           </div>
           <div  class="usernames"style="font-weight:bold;"> queen.py</div>
           <div id="textcolumn">
-            <p id="demo"style="font-weight:bold;">Some text...</p>
+            <div id="textbox">
+              <span id="downicon" class="dropdown">
+                <button class="circle1" style="font-size:25px;color:red;"><i class="fa fa-thumbs-down"></i></button>
+                <img class="dropdown-content" src="boo.gif">
+              </span>
+              <span id="thumbicon" class="dropdown">
+                <button class="circle1" style="font-size:25px;color:green;"><i class="fa fa-thumbs-up"></i></button>
+                <img class="dropdown-content" src="thumbup.gif">
+              </span>
+                <p id="demo" style="font-weight:bold;">Some text...</p>
+            </div>
+            <p></p>
             <div id="second">
               <div class="comments"style="font-weight:bold;">Comments...</div>
               <input class="button1" type="text" id="myText" name="text" placeholder="Type something in...">
               <button style="font-weight:bold;" class="button1" onclick="myFunction2()">Send</button>
-              <span id="dropdown">
+              <span onclick="thumbsup()" class="dropdown">
                 <button class="circle1" style="font-size:25px;color:green;"><i class="fa fa-thumbs-up"></i></button>
                 <img class="dropdown-content" src="thumbup.gif">
               </span>
-              <span id="dropdown">
+              <span onclick="thumbsdown()" class="dropdown">
                 <button class="circle1" style="font-size:25px;color:red;"><i class="fa fa-thumbs-down"></i></button>
-                <img class="dropdown-content2" src="boo.gif">
+                <img class="dropdown-content" src="boo.gif">
               </span>
               <p></p>
               <div class="dropdown">
-                <button style="font-size:30px;color:red;"><i class="fa fa-microphone"></i></button>
+                <button class= "three" style="font-size:30px;color:red;"><i class="fa fa-microphone"></i></button>
                 <div class="dropdown-content">
                   <img src="recordbutton.gif">
                 </div>
               </div>
               <div class="dropdown">
-                <button style="font-size:30px;color:blue;"> <i class="fa fa-camera"></i></button>
+                <button class="three" style="font-size:30px;color:blue;"> <i class="fa fa-camera"></i></button>
                 <div class="dropdown-content">
                   <img src="pose.gif">
                 </div>
               </div>
               <div class="dropdown">
-                <button style="font-size:30px;color:green;"><i class="material-icons">attachment</i></button>
+                <button class="three" style="font-size:30px;color:green;"><i class="material-icons">attachment</i></button>
                 <div class="dropdown-content">
                   <img src="click.gif">
                 </div>
