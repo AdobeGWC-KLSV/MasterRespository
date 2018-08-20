@@ -19,7 +19,7 @@ function signInCheck() {
     if (username_entered == usersArr[i].username && password_entered == usersArr[i].password) {
       signedIn = true;
       alert("correct");
-      location.assign("https://gwc-chatr.github.io./index.html");
+      window.location.assign("https://gwc-chatr.github.io./index.html");
       //not sending user home for some reason, it works when placed outside of this function
       break
     }

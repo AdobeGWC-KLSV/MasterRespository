@@ -15,8 +15,12 @@ footer {
 * {
   box-sizing: border-box;
   padding-right: 20px;
+}
+
+.forum {
   padding-left: 20px;
 }
+
 
 body{
   background-image: url(water2.jpg);
