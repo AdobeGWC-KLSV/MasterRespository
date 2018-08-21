@@ -11,7 +11,10 @@
     <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Butterfly Kids' rel='stylesheet'>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Atomic%20Age" rel="stylesheet" type="text/css"/> -->
+    <link href="https://fonts.googleapis.com/css?family=Atomic%20Age" rel="stylesheet" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Oleo Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sansita' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Salsa' rel='stylesheet'>
     <link async href="https://fonts.googleapis.com/css?family=Squada%20One" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
     <link rel="shortcut icon" type="image/png" href="finallips.png"/>
     <title>Chatr</title>
@@ -25,7 +28,7 @@
     <div class = "header">
       <img class = "logo" src="Chater5Cropped.png" alt="Chatter logo" >
       <div class="navbar">
-        <a href="index.html">Home</a>  <!--need to put in link urls-->
+        <a href="index.html">Home</a>
         <a href="chatr.html">Chat Room</a>
         <a href="Inspirationboard.html">Inspiration</a>
         <a href="aboutus.html">About Us</a>
@@ -35,11 +38,11 @@
 <!--first post-->
     <div class = "forum">
       <div class="row">
-        <div id="column1" style="background-color:#F4C2C2;">
+        <div id="post1" style="background-color:#F4C2C2;">
           <div id="user">
             <img class = "userimage" src="minion2.jpg">
           </div>
-          <div  class="usernames"style="font-weight:bold;"> queen.py</div>
+          <div class="usernames">user1</div>
           <div id="textcolumn">
             <div id="textbox">
               <span id="downicon" class="dropdown">
@@ -50,12 +53,12 @@
                 <button class="circle1" style="font-size:25px;color:green;"><i class="fa fa-thumbs-up"></i></button>
                 <img class="dropdown-content" src="thumbup.gif">
               </span>
-                <p id="demo" style="font-weight:bold;">Some text...</p>
+                <p class="fillerText" id ="fillerText1">Some text...</p>
             </div>
             <p></p>
             <div id="second">
-              <div class="comments"style="font-weight:bold;">Comments...</div>
-              <input class="button1" type="text" id="myText" name="text" placeholder="Type something in...">
+              <div class="comments"style="font-weight:bold;">Comment on the post above</div>
+              <input class="button1" type="text" id="myText" name="text" placeholder="Type in a comment...">
               <button style="font-weight:bold;" class="button1" onclick="myFunction2()">Send</button>
               <span onclick="thumbsup()" class="dropdown">
                 <button class="circle1" style="font-size:25px;color:green;"><i class="fa fa-thumbs-up"></i></button>
@@ -88,7 +91,7 @@
           </div>
         </div>
         <!--suggestion survey-->
-        <div class="column2">
+        <div class="post2">
         <div class="dropdown">
           <span class="material-icons" style="font-size:36px; padding-top:5px; padding-left: 50px;color:white;font-size:80px;">developer_board</span>
           <div class="dropdown-content">
@@ -101,17 +104,17 @@
 
 <!--3rd post-->
     <div class="row">
-      <div id="column1" style="background-color:#F4C2C2;">
+      <div id="post1" style="background-color:#F4C2C2;">
         <div id="user">
           <img class = "userimage" src="minionn.png">
         </div>
         <p></p>
-        <div class="usernames">IcancallmyselfwhateverIwant.py</div>
+        <div class="usernames">user1</div>
         <div id="textcolumn">
-          <p id="demo2" style="font-weight:bold">Some text.. </p>
+          <p class="fillerText" id ="fillerText2">Some text.. </p>
           <div class="second">
-            <div class="comments" style="font-weight:bold;">Comments...</div>
-            <input class="button1" type="text" id="myText" name="text" placeholder="Type something in...">
+            <div class="comments" style="font-weight:bold;">Comment on the post above</div>
+            <input class="button1" type="text" id="myText" name="text" placeholder="Type in a comment...">
             <button style="font-weight:bold;" class="button1" onclick="myFunction2()">Send</button>
             <p></p>
             <button style="font-size:30px;color:red;"><i class="fa fa-microphone"></i></button>
@@ -124,7 +127,8 @@
 
     <footer>
       <div>
-        <input type="text" id="myText2" name="text" placeholder="Type something in...">
+        <a id = "PostTitle">Post</a>
+        <input type="text" id="myText2" name="text" placeholder="Enter your own post...">
         <button onclick="myFunction()" style="font-weight:bold;">Send</button>
         <button onclick="record()" style="font-weight:bold;">Record</button>
         <button onclick="image()" style="font-weight:bold;">Image</button>
@@ -132,7 +136,7 @@
       </div>
       <div class="search-container" align = "right">
         <form action="/action_page.php">
-          <input type="text" placeholder="#Hashtag.." name="search">
+          <input type="text" placeholder="Search for a post..." name="search">
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
       </div>
