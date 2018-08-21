@@ -41,9 +41,10 @@
   /* max-width: 50%; */
 }
 
-#img {
+.hiddenImage {
   display:none;
 }
+
 
 footer {
   position: fixed;
