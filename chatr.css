@@ -69,7 +69,10 @@ footer {
   border-radius: 25px;
 }
 
-#post1 {
+.postBoxes {
+  background-color:#F4C2C2;
+  border-style:solid;
+  border-color:	#9370DB;
   float: left;
   width: 65%;
   padding:40px;
@@ -78,7 +81,7 @@ footer {
   margin-top: 50px;
 }
 
-.post2{
+.survey{
   float:right;
   width:20%;
   padding:30px;
@@ -91,10 +94,11 @@ footer {
 }
 
 .userimage {
-  width: 180px;
-  height: 150px;
+  width: 100px;
+  height: 75px;
   min-height: 0px;
   min-width: 0px;
+  float: left;
 }
 .three{
   padding-left:40px;
@@ -192,6 +196,7 @@ body {
 }
 .comments{
   padding: 20px;
+  font-weight:bold;
 }
 
 .dropdown {
