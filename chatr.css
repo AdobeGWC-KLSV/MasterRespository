@@ -144,12 +144,12 @@ footer {
 }
 
 .sidenav {
-  width: 190px;
+  width: 208px;
   font-family: "Oleo Script";
   position: fixed;
   z-index: 1;
-  top: 350px;
-  left: 970px;
+  top: 335px;
+  left: 1050px;
   background:	#FA8072;
   overflow-x: hidden;
   padding: 12px 0;
