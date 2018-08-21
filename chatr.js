@@ -2,7 +2,7 @@ var chat = [];
 function myFunction() {
     var x = document.getElementById("myText2").value;
     chat.push(x);
-    document.getElementById("demo").innerHTML = chat;
+    document.getElementById("fillerText1").innerHTML = chat;
 }
 
 // var chat2 = [];
