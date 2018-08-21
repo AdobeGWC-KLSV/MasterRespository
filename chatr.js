@@ -1,5 +1,5 @@
 var chat = [];
-function post() {
+function myFunction() {
     var x = document.getElementById("myText2").value;
     chat.push(x);
     document.getElementById("fillerText1").innerHTML = chat;
@@ -7,7 +7,7 @@ function post() {
 
 // var chat2 = [];
 var count = 1;
-function comments() {
+function comment() {
     var x = document.getElementById("myText").value;
     // chat2.push(x);
     var p = document.createElement("p");

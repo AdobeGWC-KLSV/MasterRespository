@@ -91,10 +91,11 @@ footer {
 }
 
 .userimage {
-  width: 180px;
-  height: 150px;
+  width: 100px;
+  height: 75px;
   min-height: 0px;
   min-width: 0px;
+  float: left;
 }
 .three{
   padding-left:40px;
@@ -192,6 +193,7 @@ body {
 }
 .comments{
   padding: 20px;
+  font-weight:bold;
 }
 
 .dropdown {

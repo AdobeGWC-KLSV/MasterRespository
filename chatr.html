@@ -17,7 +17,7 @@
     <link href='https://fonts.googleapis.com/css?family=Salsa' rel='stylesheet'>
     <link async href="https://fonts.googleapis.com/css?family=Squada%20One" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
     <link rel="shortcut icon" type="image/png" href="finallips.png"/>
-    <title>Chatr - Chatroom</title>
+    <title>Chatr</title>
   </head>
   <body>
     <div class = "profileManagement">
@@ -41,8 +41,8 @@
         <div id="post1" style="background-color:#F4C2C2;">
           <div id="user">
             <img class = "userimage" src="minion2.jpg">
+            <div class="usernames">user1</div>
           </div>
-          <div class="usernames">user1</div>
           <div id="textcolumn">
             <div id="textbox">
               <span id="downicon" class="dropdown">
@@ -57,7 +57,7 @@
             </div>
             <p></p>
             <div id="second">
-              <div class="comments"style="font-weight:bold;">Comment on the post above</div>
+              <div class="comments">Comment on this post</div>
               <input class="button1" type="text" id="myText" name="text" placeholder="Type in a comment...">
               <button style="font-weight:bold;" class="button1" onclick="comment()">Send</button>
               <span onclick="thumbsup()" class="dropdown">
@@ -107,13 +107,12 @@
       <div id="post1" style="background-color:#F4C2C2;">
         <div id="user">
           <img class = "userimage" src="minionn.png">
+          <div class="usernames">user1</div>
         </div>
-        <p></p>
-        <div class="usernames">user1</div>
         <div id="textcolumn">
           <p class="fillerText" id ="fillerText2">Some text.. </p>
           <div class="second">
-            <div class="comments" style="font-weight:bold;">Comment on the post above</div>
+            <div class="comments" >Comment on this post</div>
             <input class="button1" type="text" id="myText" name="text" placeholder="Type in a comment...">
             <button style="font-weight:bold;" class="button1" onclick="comment()">Send</button>
             <p></p>
@@ -129,7 +128,7 @@
       <div>
         <a id = "PostTitle">Post</a>
         <input type="text" id="myText2" name="text" placeholder="Enter your own post...">
-        <button onclick="post()" style="font-weight:bold;">Send</button>
+        <button onclick="myFunction()" style="font-weight:bold;">Send</button>
         <button onclick="record()" style="font-weight:bold;">Record</button>
         <button onclick="image()" style="font-weight:bold;">Image</button>
         <button onclick="link()"style="font-weight:bold;">Link</button>
