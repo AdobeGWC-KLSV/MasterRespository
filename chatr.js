@@ -1,13 +1,29 @@
-var chat = [];
-function myFunction() {
-    var x = document.getElementById("myText2").value;
-    chat.push(x);
-    document.getElementById("fillerText1").innerHTML = chat;
+// var chat = [];
+var post1Filled = false;
+//hiding the post boxes
+var post1 = document.getElementById("postBox1");
+// post1.style.visibility = "hidden";
+post1.hide();
+var post2 = document.getElementById("postBox2");
+// post2.style.display = "none";
+function post() {
+    var postTextEntered = document.getElementById("myText2").value;
+    if(post1Filled == false) {
+      document.getElementById("textSpace1").innerHTML = postTextEntered;
+      post1Filled = true;
+
+      console.log("in if statement")
+    }
+    else {//need to add more else ifs and variables for more posts
+      document.getElementById("textSpace2").innerHTML = postTextEntered;
+    }
+
+
 }
 
 // var chat2 = [];
 var count = 1;
-function myFunction2() {
+function comment() {
     var x = document.getElementById("myText").value;
     // chat2.push(x);
     var p = document.createElement("p");
