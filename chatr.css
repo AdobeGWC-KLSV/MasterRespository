@@ -24,6 +24,18 @@ footer {
   padding-right: 20px;
 }
 
+#forumTitle {
+  text-align: center;
+  font-family: "Abril Fatface";
+  font-size: 35px;
+}
+
+#noPosts {
+  text-align: center;
+  font-family: "Helvetica";
+  font-size: 25px;
+}
+
 .forum {
   padding-left: 20px;
 }
@@ -44,12 +56,12 @@ footer {
   float: right;
   display: none;
 }
-.fillerText {
+/* .fillerText {
   border-style: solid;
   padding:20px;
   font-family: "Lato", sans-serif;
   border-radius: 25px;
-}
+} */
 
 .chatMessage {
   border-style: solid;
@@ -85,7 +97,6 @@ footer {
   float:right;
   width:20%;
   padding:30px;
-  padding-right: 20px;
   background-color:		#DB7093;
 }
 

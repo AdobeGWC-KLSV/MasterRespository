@@ -36,6 +36,9 @@
       </div>
     </div>
 
+    <p id = "forumTitle">General Forum</p>
+    <p id = "noPosts">There are no posts yet in this forum.</p>
+
 <!--first post-->
     <div class = "forum">
       <div class="row">
@@ -46,26 +49,27 @@
           </div>
           <div id="textcolumn">
             <div id="textbox">
-              <span id="downicon" class="dropdown">
+              <span id="downicon1" class="dropdown">
                 <button class="circle1" style="font-size:25px;color:red;"><i class="fa fa-thumbs-down"></i></button>
                 <img class="dropdown-content" src="boo.gif">
               </span>
-              <span id="thumbicon" class="dropdown">
+              <span id="thumbicon1" class="dropdown">
                 <button class="circle1" style="font-size:25px;color:green;"><i class="fa fa-thumbs-up"></i></button>
                 <img class="dropdown-content" src="thumbup.gif">
               </span>
-                <p class="fillerText" id ="textSpace1"></p>
+              <p id ="textSpace1"></p>
             </div>
             <p></p>
+            <!--comments box-->
             <div id="second">
               <div class="comments">Comment on this post</div>
-              <input class="button1" type="text" id="myText" name="text" placeholder="Type in a comment...">
               <button style="font-weight:bold;" class="button1" onclick="comment()">Send</button>
-              <span onclick="thumbsup()" class="dropdown">
+              <input class="button1" type="text" id="myText" name="text" placeholder="Type in a comment...">
+              <span onclick="thumbsup1()" class="dropdown">
                 <button class="circle1" style="font-size:25px;color:green;"><i class="fa fa-thumbs-up"></i></button>
                 <img class="dropdown-content" src="thumbup.gif">
               </span>
-              <span onclick="thumbsdown()" class="dropdown">
+              <span onclick="thumbsdown1()" class="dropdown">
                 <button class="circle1" style="font-size:25px;color:red;"><i class="fa fa-thumbs-down"></i></button>
                 <img class="dropdown-content" src="boo.gif">
               </span>
@@ -94,17 +98,17 @@
 
         <!--suggestion survey-->
         <div class="survey">
-          <div class="dropdown">
-            <span class="material-icons" style="font-size:36px; padding-top:5px; padding-left: 50px;color:white;font-size:80px;">developer_board</span>
+          <span class="material-icons" style="font-size:36px; padding-top:5px; margin-left: auto; margin-right: auto;color:white;font-size:80px;">developer_board</span>
+          <!-- <div class="dropdown">
             <div class="dropdown-content">
               <p> Click the link below to suggest new forum topics!</p>
             </div>
-          </div>
-          <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSetuyt_grz53fNgZhr5Bq1KWreBKpjCT5vSx2xK2xH9D2fP1g/viewform">Suggest topics?</a></p>
+          </div> -->
+          <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSetuyt_grz53fNgZhr5Bq1KWreBKpjCT5vSx2xK2xH9D2fP1g/viewform">Suggest topics</a></p>
         </div>
       </div>
 
-<!--3rd post-->
+<!--2nd post-->
     <div class="row">
       <div id="postBox2" class="postBoxes">
         <div id="user">
@@ -112,11 +116,30 @@
           <div class="usernames">user1</div>
         </div>
         <div id="textcolumn">
-          <p class="fillerText" id ="textSpace2"></p>
+          <div id = "textbox">
+            <span id="downicon2" class="dropdown">
+              <button class="circle1" style="font-size:25px;color:red;"><i class="fa fa-thumbs-down"></i></button>
+              <img class="dropdown-content" src="boo.gif">
+            </span>
+            <span id="thumbicon2" class="dropdown">
+              <button class="circle1" style="font-size:25px;color:green;"><i class="fa fa-thumbs-up"></i></button>
+              <img class="dropdown-content" src="thumbup.gif">
+            </span>
+            <p id ="textSpace2"></p>
+          </div>
+          <p></p>
           <div class="second">
             <div class="comments" >Comment on this post</div>
             <input class="button1" type="text" id="myText" name="text" placeholder="Type in a comment...">
             <button style="font-weight:bold;" class="button1" onclick="comment()">Send</button>
+            <span onclick="thumbsup2()" class="dropdown">
+              <button class="circle1" style="font-size:25px;color:green;"><i class="fa fa-thumbs-up"></i></button>
+              <img class="dropdown-content" src="thumbup.gif">
+            </span>
+            <span onclick="thumbsdown2()" class="dropdown">
+              <button class="circle1" style="font-size:25px;color:red;"><i class="fa fa-thumbs-down"></i></button>
+              <img class="dropdown-content" src="boo.gif">
+            </span>
             <p></p>
             <button style="font-size:30px;color:red;"><i class="fa fa-microphone"></i></button>
             <button style="font-size:30px;color:blue;"> <i class="fa fa-camera"></i></button>
@@ -125,6 +148,29 @@
         </div>
       </div>
     </div> <!--closes the div that separates the forums from the header-->
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p><p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p><p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p>.</p>
 
     <footer>
       <div>
