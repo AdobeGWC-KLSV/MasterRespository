@@ -17,12 +17,13 @@
     <link href='https://fonts.googleapis.com/css?family=Salsa' rel='stylesheet'>
     <link async href="https://fonts.googleapis.com/css?family=Squada%20One" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
     <link rel="shortcut icon" type="image/png" href="finallips.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Chatr</title>
   </head>
   <body>
     <div class = "profileManagement">
       <a href="createAccount.html">New Account</a><br>
-      <a>or</a>
+      <a>or</a><br>
       <a href="signIn.html">Sign In</a><br>
     </div>
     <div class = "header">
@@ -38,7 +39,7 @@
 <!--first post-->
     <div class = "forum">
       <div class="row">
-        <div id="post1" style="background-color:#F4C2C2;">
+        <div id="postBox1" class="postBoxes">
           <div id="user">
             <img class = "userimage" src="minion2.jpg">
             <div class="usernames">user1</div>
@@ -53,7 +54,7 @@
                 <button class="circle1" style="font-size:25px;color:green;"><i class="fa fa-thumbs-up"></i></button>
                 <img class="dropdown-content" src="thumbup.gif">
               </span>
-                <p class="fillerText" id ="fillerText1">Some text...</p>
+                <p class="fillerText" id ="textSpace1"></p>
             </div>
             <p></p>
             <div id="second">
@@ -90,27 +91,28 @@
             </div>
           </div>
         </div>
+
         <!--suggestion survey-->
-        <div class="post2">
-        <div class="dropdown">
-          <span class="material-icons" style="font-size:36px; padding-top:5px; padding-left: 50px;color:white;font-size:80px;">developer_board</span>
-          <div class="dropdown-content">
-            <p> Click the link below to suggest new forum topics!</p>
+        <div class="survey">
+          <div class="dropdown">
+            <span class="material-icons" style="font-size:36px; padding-top:5px; padding-left: 50px;color:white;font-size:80px;">developer_board</span>
+            <div class="dropdown-content">
+              <p> Click the link below to suggest new forum topics!</p>
+            </div>
           </div>
-        </div>
-          <p class="survey"><a href="https://docs.google.com/forms/d/e/1FAIpQLSetuyt_grz53fNgZhr5Bq1KWreBKpjCT5vSx2xK2xH9D2fP1g/viewform">Suggest topics?</a></p>
+          <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSetuyt_grz53fNgZhr5Bq1KWreBKpjCT5vSx2xK2xH9D2fP1g/viewform">Suggest topics?</a></p>
         </div>
       </div>
 
 <!--3rd post-->
     <div class="row">
-      <div id="post1" style="background-color:#F4C2C2;">
+      <div id="postBox2" class="postBoxes">
         <div id="user">
-          <img class = "userimage" src="minionn.png">
+          <img class = "userimage" src="minion2.jpg">
           <div class="usernames">user1</div>
         </div>
         <div id="textcolumn">
-          <p class="fillerText" id ="fillerText2">Some text.. </p>
+          <p class="fillerText" id ="textSpace2"></p>
           <div class="second">
             <div class="comments" >Comment on this post</div>
             <input class="button1" type="text" id="myText" name="text" placeholder="Type in a comment...">
@@ -128,7 +130,7 @@
       <div>
         <a id = "PostTitle">Post</a>
         <input type="text" id="myText2" name="text" placeholder="Enter your own post...">
-        <button onclick="myFunction()" style="font-weight:bold;">Send</button>
+        <button onclick="post()" style="font-weight:bold;">Send</button>
         <button onclick="record()" style="font-weight:bold;">Record</button>
         <button onclick="image()" style="font-weight:bold;">Image</button>
         <button onclick="link()"style="font-weight:bold;">Link</button>

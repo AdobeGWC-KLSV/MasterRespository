@@ -69,7 +69,8 @@ footer {
   border-radius: 25px;
 }
 
-#post1 {
+.postBoxes {
+  background-color:#F4C2C2;
   float: left;
   width: 65%;
   padding:40px;
@@ -78,7 +79,7 @@ footer {
   margin-top: 50px;
 }
 
-.post2{
+.survey{
   float:right;
   width:20%;
   padding:30px;
