@@ -1,8 +1,9 @@
 body{
   background-image: url(br.jpg);
+  font-family: "Bree Serif";
 }
 
-.ha{
-  padding-left:300px;
-  padding-top:40px;
+.text{
+  text-align: center;
+  vertical-align: center;
 }
