@@ -13,6 +13,13 @@ footer {
   padding-top: 10px;
 }
 
+#PostTitle {
+  color:black;
+  font-size: 25px;
+  font-family: "Abril Fatface";
+
+}
+
 * {
   box-sizing: border-box;
   padding-right: 20px;
@@ -120,6 +127,7 @@ body {
 
 .sidenav {
   width: 190px;
+  font-family: "Oleo Script";
   position: fixed;
   z-index: 1;
   top: 350px;
