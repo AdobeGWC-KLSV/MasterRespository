@@ -92,6 +92,22 @@ footer {
   border-radius: 25px;
 }
 
+#commentList1 {
+  font-family: 'Teko', sans-serif;
+}
+
+#commentList2 {
+  font-family: 'Teko', sans-serif;
+}
+
+#textSpace1 {
+    font-family: 'Teko', sans-serif;
+}
+
+#textSpace2 {
+    font-family: 'Teko', sans-serif;
+}
+
 .postBoxes {
   background-color:#F4C2C2;
   border-style:solid;
