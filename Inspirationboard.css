@@ -7,12 +7,16 @@
 
 } */
 
-.row {
-  display: flex;
+/* .row {
+  max-width: 300px;
+  max-height: 400px;
   padding-left: 65px;
+  object-fit:scale-down; */
+    /* display: flex; */
+  /* overflow: hidden; */
   /* flex-wrap: wrap;
   padding: 0 4px; */
-}
+/* } */
 
 /* Create four equal columns that sits next to each other */
 .column {
@@ -26,9 +30,14 @@
   width: 50%;
 }
 
-.column img {
+.row img {
+  width: 520px;
+  height: 600px;
+  margin-left: 80px;
   margin-top: 20px;
   vertical-align: middle;
+  border-radius:25px;
+  /* border-top-left-radius:25px; */
   /* max-width: 50%; */
 }
 
@@ -41,8 +50,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #FFE4B5;
-  color: white;
+  background-color: #DDDDDD;
   text-align: center;
 }
 body{
