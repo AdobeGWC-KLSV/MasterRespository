@@ -38,7 +38,7 @@ footer {
 .forumHeaderText {
   display: flex;
   flex-direction: column;
-  padding-left: 280px;
+  padding-left: 250px;
 }
 
 #noPosts {
