@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+.contactInfo {
+  text-align: center;
+  font-family: "Sansita";
+}
+
 /* Create four equal columns that floats next to each other */
 .column {
     float: left;
