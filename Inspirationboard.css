@@ -47,6 +47,8 @@
 
 
 footer {
+  border-style:solid;
+  border-color: #5F9EA0;
   position: fixed;
   left: 0;
   bottom: 0;
