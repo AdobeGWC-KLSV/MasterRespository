@@ -15,22 +15,20 @@
     <link href='https://fonts.googleapis.com/css?family=Oleo Script' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Sansita' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Salsa' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:600" rel="stylesheet">
     <link async href="https://fonts.googleapis.com/css?family=Squada%20One" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
     <link rel="shortcut icon" type="image/png" href="finallips.png"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Chatr</title>
   </head>
-<<<<<<< HEAD
-  <body>
-
-=======
 
   <body style = "padding-bottom: 2000px;">
->>>>>>> a1322c78a816f2df25dffa807c09587ca6ec99fd
     <div class = "profileManagement">
-      <a href="createAccount.html">New Account</a><br>
+      <a id="createAccount" href="createAccount.html">New Account</a><br>
       <a>or</a><br>
-      <a href="signIn.html">Sign In</a><br>
+      <a id="signIn" href="signIn.html">Sign In</a><br>
     </div>
 
     <div class = "header">
@@ -47,7 +45,7 @@
     <div class = "forumHeader">
       <div class = "forumHeaderText">
         <p id = "forumTitle">General Forum</p>
-        <p id = "noPosts">There are no posts yet in this forum.</p>
+        <p id = "noPosts">There are no posts yet. Add one via the box at the bottom of the page.</p>
       </div>
       <!--suggestion survey-->
       <div class="survey">
@@ -67,7 +65,7 @@
         <div id="postBox1" class="postBoxes">
           <div id="user">
             <img class = "userimage" src="minion2.jpg">
-            <div class="usernames">user1</div>
+            <div class="usernames">user_1</div>
           </div>
           <div id="textcolumn">
             <div id="textbox">
@@ -79,7 +77,7 @@
                 <button class="circle1" style="font-size:25px;color:green;"><i class="fa fa-thumbs-up"></i></button>
                 <img class="dropdown-content" src="thumbup.gif">
               </span>
-              <p id ="textSpace1"></p>
+              <p id="textSpace1"></p>
             </div>
             <p></p>
             <!--comments box-->
@@ -125,7 +123,7 @@
       <div id="postBox2" class="postBoxes">
         <div id="user">
           <img class = "userimage" src="minion2.jpg">
-          <div class="usernames">user1</div>
+          <div class="usernames">user_1</div>
         </div>
         <div id="textcolumn">
           <div id = "textbox">
@@ -137,7 +135,7 @@
               <button class="circle1" style="font-size:25px;color:green;"><i class="fa fa-thumbs-up"></i></button>
               <img class="dropdown-content" src="thumbup.gif">
             </span>
-            <p id ="textSpace2"></p>
+            <p id="textSpace2"></p>
           </div>
           <p></p>
           <!--comments box 2-->
@@ -154,9 +152,9 @@
               <img class="dropdown-content" src="boo.gif">
             </span>
             <p></p>
-            <button style="font-size:30px;color:red;"><i class="fa fa-microphone"></i></button>
-            <button style="font-size:30px;color:blue;"> <i class="fa fa-camera"></i></button>
-            <button style="font-size:30px;color:green;"><i class="material-icons">attachment</i></button>
+            <button class="three" style="font-size:30px;color:red;"><i class="fa fa-microphone"></i></button>
+            <button class="three" style="font-size:30px;color:blue;"> <i class="fa fa-camera"></i></button>
+            <button class="three" style="font-size:30px;color:green;"><i class="material-icons">attachment</i></button>
           </div>
         </div>
       </div>
@@ -166,7 +164,7 @@
       <div>
         <a id = "PostTitle" style = "padding-right: 65px; color: purple;">Post</a>
         <input type="text" id="enteredPost" name="text" placeholder="Enter your own post...">
-        <button onclick="post()" style="font-weight:bold;">Send</button>
+        <button onclick="post()" style="font-weight:bold;">Send Text</button>
         <button onclick="record()" style="font-weight:bold;">Record</button>
         <button onclick="image()" style="font-weight:bold;">Image</button>
         <button onclick="link()"style="font-weight:bold;">Link</button>
@@ -178,9 +176,9 @@
         </form>
       </div>
       <div class="sidenav">
+        <div style = "text-decoration: underline; color: black; font-size: 24px; font-weight: bold;">Forum Topics</div>
         <a href="#relationships">Relationships</a>
-        <a href="#friendships">Friendships</a>
-        <a href="#family">Family</a>
+        <a href="#friends&family">Friends & Family</a>
         <a href="#beauty">Beauty</a>
         <a href="#misc">Miscellaneous</a>
       </div>
