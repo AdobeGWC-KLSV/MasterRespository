@@ -9,6 +9,7 @@
 
 .row {
   display: flex;
+  padding-left: 65px;
   /* flex-wrap: wrap;
   padding: 0 4px; */
 }
@@ -26,7 +27,6 @@
 }
 
 .column img {
-  margin: auto;
   margin-top: 20px;
   vertical-align: middle;
   /* max-width: 50%; */
