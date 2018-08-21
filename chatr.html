@@ -20,7 +20,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Chatr</title>
   </head>
-  <body>
+
+  <body style = "padding-bottom: 2000px;">
     <div class = "profileManagement">
       <a href="createAccount.html">New Account</a><br>
       <a>or</a><br>
@@ -36,8 +37,23 @@
       </div>
     </div>
 
-    <p id = "forumTitle">General Forum</p>
-    <p id = "noPosts">There are no posts yet in this forum.</p>
+<!--the row with the forum title and survey-->
+    <div class = "forumHeader">
+      <div class = "forumHeaderText">
+        <p id = "forumTitle">General Forum</p>
+        <p id = "noPosts">There are no posts yet in this forum.</p>
+      </div>
+      <!--suggestion survey-->
+      <div class="survey">
+        <span class="material-icons" style="font-size:36px; padding-top:5px; padding-left: 5px; margin-left: auto; margin-right: auto;color:white;font-size:80px;">developer_board</span>
+        <!-- <div class="dropdown">
+          <div class="dropdown-content">
+            <p> Click the link below to suggest new forum topics!</p>
+          </div>
+        </div> -->
+        <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSetuyt_grz53fNgZhr5Bq1KWreBKpjCT5vSx2xK2xH9D2fP1g/viewform">Suggest topics</a></p>
+      </div>
+    </div>
 
 <!--first post-->
     <div class = "forum">
@@ -61,10 +77,10 @@
             </div>
             <p></p>
             <!--comments box-->
-            <div id="second">
+            <div id="commentList1" class = "commentListBox">
               <div class="comments">Comment on this post</div>
-              <button style="font-weight:bold;" class="button1" onclick="comment()">Send</button>
-              <input class="button1" type="text" id="myText" name="text" placeholder="Type in a comment...">
+              <input class="button1" type="text" id="myComment1" name="text" placeholder="Type in a comment...">
+              <button style="font-weight:bold;" class="button1" onclick="comment1()">Send</button>
               <span onclick="thumbsup1()" class="dropdown">
                 <button class="circle1" style="font-size:25px;color:green;"><i class="fa fa-thumbs-up"></i></button>
                 <img class="dropdown-content" src="thumbup.gif">
@@ -96,16 +112,6 @@
           </div>
         </div>
 
-        <!--suggestion survey-->
-        <div class="survey">
-          <span class="material-icons" style="font-size:36px; padding-top:5px; margin-left: auto; margin-right: auto;color:white;font-size:80px;">developer_board</span>
-          <!-- <div class="dropdown">
-            <div class="dropdown-content">
-              <p> Click the link below to suggest new forum topics!</p>
-            </div>
-          </div> -->
-          <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSetuyt_grz53fNgZhr5Bq1KWreBKpjCT5vSx2xK2xH9D2fP1g/viewform">Suggest topics</a></p>
-        </div>
       </div>
 
 <!--2nd post-->
@@ -128,10 +134,11 @@
             <p id ="textSpace2"></p>
           </div>
           <p></p>
-          <div class="second">
+          <!--comments box 2-->
+          <div id="commentList2" class = "commentListBox">
             <div class="comments" >Comment on this post</div>
-            <input class="button1" type="text" id="myText" name="text" placeholder="Type in a comment...">
-            <button style="font-weight:bold;" class="button1" onclick="comment()">Send</button>
+            <input class="button1" type="text" id="myComment2" name="text" placeholder="Type in a comment...">
+            <button style="font-weight:bold;" class="button1" onclick="comment2()">Send</button>
             <span onclick="thumbsup2()" class="dropdown">
               <button class="circle1" style="font-size:25px;color:green;"><i class="fa fa-thumbs-up"></i></button>
               <img class="dropdown-content" src="thumbup.gif">
@@ -148,34 +155,11 @@
         </div>
       </div>
     </div> <!--closes the div that separates the forums from the header-->
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p><p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p><p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p>.</p>
 
     <footer>
       <div>
-        <a id = "PostTitle">Post</a>
-        <input type="text" id="myText2" name="text" placeholder="Enter your own post...">
+        <a id = "PostTitle" style = "padding-right: 65px; color: purple;">Post</a>
+        <input type="text" id="enteredPost" name="text" placeholder="Enter your own post...">
         <button onclick="post()" style="font-weight:bold;">Send</button>
         <button onclick="record()" style="font-weight:bold;">Record</button>
         <button onclick="image()" style="font-weight:bold;">Image</button>
@@ -195,7 +179,6 @@
         <a href="#others">Others</a>
       </div>
     </footer>
-
 
   </body>
 </html>

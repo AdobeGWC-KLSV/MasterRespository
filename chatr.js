@@ -7,7 +7,7 @@ document.getElementById("postBox2").style.visibility = "hidden";
 }
 
 function post() {
-    var postTextEntered = document.getElementById("myText2").value;
+    var postTextEntered = document.getElementById("enteredPost").value;
     if(post1Filled == false) {
       document.getElementById("textSpace1").innerHTML = postTextEntered;
       post1Filled = true;
@@ -25,15 +25,26 @@ function post() {
 }
 
 // var chat2 = [];
-var count = 1;
-function comment() {
-    var x = document.getElementById("myText").value;
+var count1 = 1;
+function comment1() {
+    var x = document.getElementById("myComment1").value;
     // chat2.push(x);
     var p = document.createElement("p");
     p.className = 'chatMessage';
-    p.innerHTML = count + ". " + x;
-    document.getElementById("second").appendChild(p);
-    count = count + 1; // count++; or ++count; or count += 1;
+    p.innerHTML = count1 + ". " + x;
+    document.getElementById("commentList1").appendChild(p);
+    count1 = count1 + 1; // count++; or ++count; or count += 1;
+}
+
+var count2 = 1;
+function comment2() {
+    var x = document.getElementById("myComment2").value;
+    // chat2.push(x);
+    var p2 = document.createElement("p");
+    p2.className = 'chatMessage';
+    p2.innerHTML = count2 + ". " + x;
+    document.getElementById("commentList2").appendChild(p2);
+    count2 = count2 + 1; // count++; or ++count; or count += 1;
 }
 
 function moveIcon() {

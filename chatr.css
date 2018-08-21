@@ -21,13 +21,24 @@ footer {
 
 * {
   box-sizing: border-box;
-  padding-right: 20px;
+  padding-right: 2px;
 }
 
 #forumTitle {
   text-align: center;
   font-family: "Abril Fatface";
   font-size: 35px;
+}
+
+.forumHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forumHeaderText {
+  display: flex;
+  flex-direction: column;
+  padding-left: 280px;
 }
 
 #noPosts {
@@ -69,13 +80,13 @@ footer {
   border-radius: 25px;
 }
 
-#second {
+/* #second {
   border-style: solid;
   padding:20px;
   border-radius: 25px;
-}
+} */
 
-.second {
+.commentListBox {
   border-style: solid;
   padding:20px;
   border-radius: 25px;
@@ -95,7 +106,7 @@ footer {
 
 .survey{
   float:right;
-  width:20%;
+  width: 16.5%;
   padding:30px;
   background-color:		#DB7093;
 }
