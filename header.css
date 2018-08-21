@@ -60,11 +60,6 @@
   transition: .25s linear;
 }
 
-
-#createAccount:link, #signIn:link {
-color: lightpink;
-}
-
 #createAccount:hover, #signIn:hover {
 text-decoration:none;
 text-shadow: 0 0 2px #999;
@@ -75,7 +70,7 @@ text-shadow: 0 0 2px #999;
 #createAccount:active, #signIn:active { padding-top: 2px; }
 
 #createAccount, #signIn {
-  color: pink;
+  color: #FF4395;
   padding: 5px; }
 
 /* nav ul { */
